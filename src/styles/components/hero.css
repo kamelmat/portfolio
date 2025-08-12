@@ -1,0 +1,207 @@
+.hero {
+  min-height: 100vh;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.hero__container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background: var(--bg-secondary);
+  border-radius: 24px;
+  padding: 48px;
+  border: 1px solid var(--border);
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero__roles {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.role {
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+}
+
+.hero__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.title--fullstack {
+  font-size: 36px;
+  animation: titleFullstack 9s infinite;
+}
+
+.title--manager {
+  font-size: 32px;
+  animation: titleManager 9s infinite;
+}
+
+.title--musician {
+  font-size: 32px;
+  animation: titleMusician 9s infinite;
+}
+
+.hero__description {
+  color: var(--text-secondary);
+  font-size: 18px;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.hero__cta {
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--text-primary);
+  padding: 16px 32px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform var(--transition-fast);
+}
+
+.hero__cta:hover {
+  transform: translateY(-2px);
+}
+
+.hero__visual {
+  position: relative;
+}
+
+.hero__image {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.hero__skills {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  background: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.skills__track {
+  display: flex;
+  gap: 24px;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+.skill {
+  font-family: 'Roboto Flex', monospace;
+  color: var(--text-secondary);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes titleFullstack {
+  0%, 100% { color: var(--text-primary); font-size: 36px; }
+  33%, 66% { color: var(--text-secondary); font-size: 32px; }
+}
+
+@keyframes titleManager {
+  0%, 100% { color: var(--text-secondary); font-size: 32px; }
+  33% { color: var(--text-primary); font-size: 36px; }
+  66% { color: var(--text-secondary); font-size: 32px; }
+}
+
+@keyframes titleMusician {
+  0%, 33% { color: var(--text-secondary); font-size: 32px; }
+  66% { color: var(--text-primary); font-size: 36px; }
+  100% { color: var(--text-secondary); font-size: 32px; }
+}
+
+@media (max-width: 1024px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .hero__roles {
+    justify-content: center;
+  }
+
+  .hero__description {
+    margin: 0 auto;
+  }
+
+  .hero__cta {
+    align-self: center;
+  }
+
+  .hero__visual {
+    order: -1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero__content {
+    padding: 24px;
+  }
+
+  .title--fullstack {
+    font-size: 28px;
+  }
+
+  .title--manager {
+    font-size: 24px;
+  }
+
+  .title--musician {
+    font-size: 24px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+  
+  }
+} 

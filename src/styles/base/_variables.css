@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+  --bg-primary: #0F0F0F;
+  --bg-secondary: #1A1A1A;
+  --text-primary: #F3F6F5;
+  --text-secondary: #A7BEB4;
+  --accent: #3E5D52;
+  --border: #272727;
+
+  /* Layout */
+  --max-width: 1200px;
+  --nav-height: 80px;
+  --section-padding: 80px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+} 

@@ -1,0 +1,227 @@
+.projects {
+  padding: 1rem 0;
+  background: var(--bg-primary);
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.projects__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.projects__title {
+  color: var(--text-primary);
+  font-size: 36px;
+  margin-bottom: 48px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 25%, #FFFFFF 43%, #3E5D52 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Card Styles */
+.project-card {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 2px solid var(--border);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card__images {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+}
+
+.project-card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.project-card__image.main {
+  opacity: 1;
+}
+
+.project-card__image.hover {
+  opacity: 0;
+}
+
+.project-card__images:hover .project-card__image.main {
+  opacity: 0;
+}
+
+.project-card__images:hover .project-card__image.hover {
+  opacity: 1;
+}
+
+.project-card__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.project-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-card__title {
+  font-size: 18px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 25%, #FFFFFF 38%, #3E5D52 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.project-card__status {
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.project-card__description {
+  color: #6F6F6F;
+  font-size: 14px;
+  line-height: 1.5;
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card__tag {
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  border: 1px solid var(--border);
+}
+
+.project-card__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-card__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.project-card__arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(225, 234, 229, 0.50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card__link:hover .project-card__arrow {
+  transform: rotate(45deg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card__images {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem 0;
+  }
+
+  .projects__container {
+    padding: 0 16px;
+  }
+
+  .project-card__images {
+    height: 180px;
+  }
+
+  .project-card__content {
+    padding: 16px;
+  }
+
+  .project-card__title {
+    font-size: 16px;
+  }
+
+  .project-card__description {
+    font-size: 13px;
+    text-align: justify;
+  }
+}
+
+/* Add project card styles once we implement them */
+
+/* Add these new specific rules for the Metal Guitar Academy card */
+.project-card__title[data-project="METAL GUITAR ACADEMY"] {
+    font-size: 14px !important; /* Even smaller than before */
+    letter-spacing: 1px !important;
+    line-height: 1.2;
+}
+
+.project-card__status[data-project="METAL GUITAR ACADEMY"] {
+    font-size: 10px !important; /* Even smaller than before */
+}
+
+/* Add additional styling if needed */
+.project-card[data-project="METAL GUITAR ACADEMY"] .project-card__header {
+    gap: 8px; /* Reduce gap between title and status */
+}
+
+/* Add project card styles once we implement them */
+
+/* Add styles for GitHub status links */
+.project-card__status a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-card__status a:hover {
+    color: #3E5D52;
+} 

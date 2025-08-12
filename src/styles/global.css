@@ -1,0 +1,55 @@
+:root {
+    /* Colors */
+    --primary-bg: #1A1A1A;
+    --secondary-bg: #0F0F0F;
+    --text-primary: #F3F6F5;
+    --text-secondary: #A7BEB4;
+    --accent-color: #3E5D52;
+    --border-color: #272727;
+    
+    /* Spacing */
+    --navbar-height: 80px;
+    --section-spacing: 120px;
+    --container-padding: 24px;
+    
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --desktop: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--desktop);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.section {
+    padding: var(--section-spacing) 0;
+}
+
+/* Utility classes */
+.text-gradient {
+    background: linear-gradient(90deg, var(--text-primary), var(--text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
