@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/components/linkedinModal.css';
 
@@ -6,8 +6,8 @@ const LinkedInModal = () => {
     const [isVisible, setIsVisible] = useState(false);
     const location = useLocation();
     
-    // You could maintain an array of your latest posts
-    const latestPosts = [
+    // Memoize posts to avoid changing reference on each render
+    const latestPosts = useMemo(() => ([
         {
             title: "Latest Project Update",
             content: "🚀 Just launched my updated portfolio with React and modern web technologies!",
@@ -59,7 +59,7 @@ const LinkedInModal = () => {
             "date": "2025"
         }
         // Add more posts as needed
-    ];
+    ]), []);
 
     // Randomly select a post each time the modal shows
     const [currentPost, setCurrentPost] = useState(latestPosts[0]);
@@ -86,7 +86,7 @@ const LinkedInModal = () => {
         } else {
             setIsVisible(false);
         }
-    }, [location.pathname]);
+    }, [location.pathname, latestPosts]);
 
     const handleReadMore = () => {
         window.open('https://www.linkedin.com/in/matias-kamelman/recent-activity/all/', '_blank');

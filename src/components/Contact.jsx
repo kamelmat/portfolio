@@ -15,7 +15,8 @@ if (PUBLIC_KEY) {
 
 const Contact = () => {
     const location = useLocation();
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    // Removed unused dropdown state
+    // const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [status, setStatus] = useState('');
     const form = useRef();
@@ -124,9 +125,10 @@ const Contact = () => {
         setStatus('');
     };
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!isDropdownOpen);
-    };
+    // Removed unused toggleDropdown function
+    // const toggleDropdown = () => {
+    //     setDropdownOpen(!isDropdownOpen);
+    // };
 
     return (
         <section className="contact">
