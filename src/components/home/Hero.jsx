@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
 
             <p className="hero__description">
-            Solid background in full-stack development, excelling in technologies like JavaScript, React, Python, and SQL. Proven ability to adapt quickly to fast-changing environments, integrate teamwork, and resolve conflicts effectively. Known for innovative problem-solving and proactive leadership, fostering team excellence. Passionate about continuous learning and applying new knowledge to drive project success. A diverse background and creative mindset that can significantly contribute to your full-stack development team.
+            Full-stack developer and AI Engineer with a solid background in JavaScript, React, Python, and SQL, currently contributing to Thoughtworks’ AiWorks. Proven ability to adapt quickly to fast-changing environments, integrate teamwork, and resolve conflicts effectively. Known for innovative problem-solving and proactive leadership, fostering team excellence. Passionate about continuous learning and applying new knowledge to drive project success. A diverse background and creative mindset that can significantly contribute to your full-stack development team.
             </p>
 
             <button 
