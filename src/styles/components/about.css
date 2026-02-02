@@ -128,6 +128,12 @@
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 40px;
+  text-align: justify;
+}
+
+.about-me-description p {
+  text-align: justify;
+  margin-bottom: 16px;
 }
 
 .btn-resume {
