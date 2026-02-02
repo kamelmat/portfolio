@@ -68,16 +68,25 @@ const AboutMe = () => {
                 <h2 className="about-me-title">MATIAS KAMELMAN</h2>
                 <div className="about-me-description">
                     <p>
-                        I am a versatile full-stack developer with a strong foundation in creating robust and scalable web applications.
+                        I am an Associate Consultant Developer at Thoughtworks, working at the intersection of AI Engineering, product development, and human-centered technology.
                     </p>
                     <p>
-                        With a background in team management and over ten years of experience in leadership roles, I bring a unique perspective to development projects, seamlessly combining technical expertise with organizational strategy.
+                        My current focus is on designing and implementing AI-driven systems at scale, contributing to complex enterprise projects for global brands such as Mercedes-Benz. I am part of the core team behind AiWorks, Thoughtworks' flagship AI platform, where I have been directly involved in the creation and evolution of the product—bridging advanced AI capabilities with real-world, production-grade impact.
                     </p>
                     <p>
-                        My passion for problem-solving and innovation drives me to craft efficient, user-focused solutions while ensuring smooth collaboration between technical and non-technical teams.
+                        Beyond hands-on engineering, I actively contribute to Thoughtworks' knowledge ecosystem, having authored successful and widely read articles that position me as a thought leader at the crossroads of technology, business value, and ethical–philosophical responsibility. I am particularly interested in exploring how AI can generate sustainable profit while supporting long-term organizational growth and respecting human and social boundaries.
                     </p>
                     <p>
-                        Outside the tech world, I channel my    creativity into music, leveraging the discipline and artistry it teaches to enhance my work in software development. Let's collaborate to build transformative digital experiences that make a difference.
+                        With a background in full-stack development and extensive experience in leadership and team management, I bring a systems-level perspective to complex challenges—aligning technical excellence, strategic intent, and meaningful collaboration across multidisciplinary teams.
+                    </p>
+                    <p>
+                        Outside traditional software development, I am the founder of Binaurapp and the creator of YANA (You Are Not Alone), an emotional support application designed to accompany people experiencing unwanted loneliness and to contribute to suicide prevention through presence, listening, and responsible technology. In parallel, I am currently writing a book on Conscious Listening, a method exploring the relationship between sound, attention, and mental well-being.
+                    </p>
+                    <p>
+                        All these initiatives are expressions of a deeper personal mission: to leverage AI, sound, and technology to improve quality of life and mental health, and to build systems that are not only intelligent and scalable, but also ethical, humane, and genuinely supportive.
+                    </p>
+                    <p>
+                        I am driven by projects that do more than optimize metrics—projects that seek to create meaningful, lasting, and human-centered impact on how people live, work, and relate to technology.
                     </p>
 
                 </div>
