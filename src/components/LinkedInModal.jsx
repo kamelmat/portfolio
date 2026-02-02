@@ -9,14 +9,28 @@ const LinkedInModal = () => {
     // Memoize posts to avoid changing reference on each render
     const latestPosts = useMemo(() => ([
         {
-            title: "Latest Project Update",
-            content: "🚀 Just launched my updated portfolio with React and modern web technologies!",
-            date: "2024"
+            title: "Why context engineering is like teaching AI to skip stones",
+            content: "🧠 Exploring how context engineering in AI is similar to teaching a child practical skills—selecting the right information at the right time for effective reasoning and action.",
+            date: "October 2025",
+            url: "https://www.thoughtworks.com/insights/blog/generative-ai/why-context-engineering-is-like-teaching-AI-to-skip-stones"
         },
         {
-            title: "Tech Achievement",
-            content: "💻 Successfully implemented full-stack features in recent projects",
-            date: "2024"
+            title: "Service-as-Software: A new economic model for the age of AI agents",
+            content: "🤖 Examining how AI agents are reshaping business models, moving from traditional SaaS to autonomous, context-aware service delivery systems.",
+            date: "2025",
+            url: "https://www.thoughtworks.com/insights/blog/generative-ai/service-as-software-a-new-economic-model-for-age-of-ai-agents"
+        },
+        {
+            title: "Why Spatial Sound Movement Makes MBW More Effective than Static Binaural Beats",
+            content: "🎧 Exploring how Moving Binaural Waves (MBW) leverage spatial sound movement and the brain's localization circuits to enhance focus more effectively than traditional binaural beats.",
+            date: "August 2025",
+            url: "https://lamenteresonante.blogspot.com/2025/08/why-spatial-sound-movement-makes-mbw.html"
+        },
+        {
+            title: "💍 One Prompt to Rule Them All – Standing at the Edge of the Next Big Leap",
+            content: "🚀 Discussing the evolution of AI prompting and the future of context engineering at the frontier of LLM capabilities.",
+            date: "August 2025",
+            url: "https://lamenteresonante.blogspot.com/"
         },
         {
             "title": "🎵 AI in Music: Evolution or Revolution?",
@@ -89,7 +103,8 @@ const LinkedInModal = () => {
     }, [location.pathname, latestPosts]);
 
     const handleReadMore = () => {
-        window.open('https://www.linkedin.com/in/matias-kamelman/recent-activity/all/', '_blank');
+        const url = currentPost.url || 'https://www.linkedin.com/in/matias-kamelman/recent-activity/all/';
+        window.open(url, '_blank');
     };
 
     return (
