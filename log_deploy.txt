@@ -1,0 +1,76 @@
+[11:40:11.876] Running build in Washington, D.C., USA (East) – iad1
+[11:40:11.876] Build machine configuration: 2 cores, 8 GB
+[11:40:11.888] Cloning github.com/kamelmat/portfolio (Branch: main, Commit: be15bd8)
+[11:40:12.026] Previous build caches not available
+[11:40:12.848] Cloning completed: 960.000ms
+[11:40:15.391] Running "vercel build"
+[11:40:16.380] Vercel CLI 44.7.3
+[11:40:16.561] WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+[11:40:16.965] Installing dependencies...
+[11:40:20.569] npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+[11:40:20.888] npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+[11:40:20.890] npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+[11:40:20.994] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[11:40:21.100] npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+[11:40:21.424] npm warn deprecated q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+[11:40:21.424] npm warn deprecated
+[11:40:21.424] npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+[11:40:21.566] npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+[11:40:21.998] npm warn deprecated workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+[11:40:22.652] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[11:40:22.876] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[11:40:23.408] npm warn deprecated domexception@2.0.1: Use your platform's native DOMException instead
+[11:40:24.109] npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+[11:40:24.223] npm warn deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+[11:40:24.737] npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+[11:40:24.738] npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+[11:40:25.208] npm warn deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+[11:40:25.208] npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+[11:40:25.212] npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+[11:40:25.215] npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+[11:40:25.273] npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+[11:40:28.428] npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+[11:40:30.810] 
+[11:40:30.811] added 1392 packages in 14s
+[11:40:30.811] 
+[11:40:30.811] 265 packages are looking for funding
+[11:40:30.812]   run `npm fund` for details
+[11:40:30.863] Running "npm run build"
+[11:40:30.967] 
+[11:40:30.968] > matiaskamelman-portfolio@0.1.0 build
+[11:40:30.968] > react-scripts build
+[11:40:30.968] 
+[11:40:31.852] Creating an optimized production build...
+[11:40:31.958] Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
+[11:40:31.959]   npx update-browserslist-db@latest
+[11:40:31.959]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[11:40:34.931] [0;33mOne of your dependencies, babel-preset-react-app, is importing the
+[11:40:34.931] "@babel/plugin-proposal-private-property-in-object" package without
+[11:40:34.931] declaring it in its dependencies. This is currently working because
+[11:40:34.931] "@babel/plugin-proposal-private-property-in-object" is already in your
+[11:40:34.931] node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+[11:40:34.931] 
+[11:40:34.931] babel-preset-react-app is part of the create-react-app project, [1mwhich
+[11:40:34.931] is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+[11:40:34.931] ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+[11:40:34.931] your devDependencies to work around this error. This will make this message
+[11:40:34.931] go away.[0m
+[11:40:34.931]   
+[11:40:42.029] Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
+[11:40:42.029]   npx update-browserslist-db@latest
+[11:40:42.029]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[11:40:43.296] 
+[11:40:43.298] Treating warnings as errors because process.env.CI = true.
+[11:40:43.298] Most CI servers set it automatically.
+[11:40:43.298] 
+[11:40:43.298] Failed to compile.
+[11:40:43.298] 
+[11:40:43.298] [eslint] 
+[11:40:43.299] src/components/Contact.jsx
+[11:40:43.299]   Line 127:11:  'toggleDropdown' is assigned a value but never used  no-unused-vars
+[11:40:43.299] 
+[11:40:43.299] src/components/LinkedInModal.jsx
+[11:40:43.299]   Line 89:8:  React Hook useEffect has a missing dependency: 'latestPosts'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[11:40:43.299] 
+[11:40:43.299] 
+[11:40:43.330] Error: Command "npm run build" exited with 1
