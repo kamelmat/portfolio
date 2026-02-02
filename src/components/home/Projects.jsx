@@ -9,8 +9,6 @@ import Voltix1 from "../../assets/voltix1.jpeg";
 import Voltix2 from "../../assets/voltix2.jpeg";
 import Star1 from "../../assets/StarWarsConnectFour.jpg";
 import Star2 from "../../assets/connect4.png";
-import Kmt from "../../assets/KM-2013-final-black.jpg";
-import Kmt2 from "../../assets/kmt.JPG";
 import Flipas1 from "../../assets/StarWars1.jpg";
 import Flipas2 from "../../assets/star-wars-ship-1.jpg";
 // Add new image imports
